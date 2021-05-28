@@ -89,6 +89,7 @@ namespace PolyglotSidequest_MEF2D
 		private void leerMallayCondiciones(mesh m, ref string filename)
 		{
 			string inputfilename = new string(new char[150]);
+			//Buscar una libreria equivalente para "Ifstream" 
 			ifstream file = new ifstream();
 			float k;
 			float Q;
@@ -258,9 +259,7 @@ namespace PolyglotSidequest_MEF2D
 		private void writeResults(mesh m, Vector T, ref string filename)
 		{
 			string outputfilename = new string(new char[150]);
-			//--------------------------------------------------------------------------------------------------------------------
-			//C++ TO C# CONVERTER TODO TASK: C# does not have an equivalent to pointers to value types:
-			//ORIGINAL LINE: int *dirich_indices = m.getDirichletIndices();
+			//A PARTIR DE AQUÍ FALTA PASARLO A C#
 			int dirich_indices = m.getDirichletIndices();
 			condition[] dirich = m.getDirichlet();
 			ofstream file = new ofstream();
