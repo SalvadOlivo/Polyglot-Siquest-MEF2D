@@ -1,6 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Text;
+using static System.Math;
+using static PolyglotSidequest_MEF2D.Classes;
+using static PolyglotSidequest_MEF2D.Math_tools;
+using static PolyglotSidequest_MEF2D.Sel;
+using static PolyglotSidequest_MEF2D.Tools;
+using System.Numerics;
 
 namespace PolyglotSidequest_MEF2D
 {
