@@ -98,13 +98,14 @@ namespace PolyglotSidequest_MEF2D
 			}
 		}
 
+		//deje los comentarios originales del codigo como referencia para no perdernos.
 		private void getMinor(List<List<float>> M, int i, int j)
 		{
 			//cout << "Calculando menor ("<<i+1<<","<<j+1<<")...\n";
 			M.RemoveAt(i);
 			for (int i = 0; i < M.Count; i++)
 			{
-				//BUSCAR UN EQUIVALENTE AL MÉTODO "erase" en C#
+				//BUSCAR UN EQUIVALENTE AL MÉTODO "erase" en C#----------------------------------------
 				M[i].erase(M[i].GetEnumerator() + j);
 			}
 		}
@@ -123,7 +124,7 @@ namespace PolyglotSidequest_MEF2D
 					List<List<float>> minor = new List<List<float>>();
 					copyMatrix(new List<List<float>>(M), minor);
 					getMinor(minor, 0, i);
-					det += Math.Pow(-1, i) * M[0][i] * determinant(new List<List<float>>(minor));
+                    (void)(det += Math.Pow(-1, i) * M[0][i] * determinant(new List<List<float>>(minor))));
 				}
 				return det;
 			}
@@ -140,7 +141,7 @@ namespace PolyglotSidequest_MEF2D
 					List<List<float>> minor = new List<List<float>>();
 					copyMatrix(new List<List<float>>(M), minor);
 					getMinor(minor, i, j);
-					Cof[i][j] = Math.Pow(-1, i + j) * determinant(new List<List<float>>(minor));
+					Cof[i][j] = (float)(Math.Pow(-1, i + j) * determinant(new List<List<float>>(minor)));
 				}
 			}
 		}

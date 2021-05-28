@@ -1,9 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing.Drawing2D;
+using System.Numerics;
 using System.Text;
 using static PolyglotSidequest_MEF2D.Classes;
 using static PolyglotSidequest_MEF2D.Math_tools;
 using static PolyglotSidequest_MEF2D.Tools;
+
+//deje los comentarios originales del codigo como referencia para no perdernos.
+
 
 namespace PolyglotSidequest_MEF2D
 {
@@ -83,7 +88,7 @@ namespace PolyglotSidequest_MEF2D
 
 		private float calculateMagnitude(float v1, float v2)
 		{
-			return Math.Sqrt(Math.Pow(v1, 2) + Math.Pow(v2, 2));
+			return (float)Math.Sqrt(Math.Pow(v1, 2) + Math.Pow(v2, 2));
 		}
 
 		private float calculateLocalArea(int i, mesh m)
@@ -104,7 +109,7 @@ namespace PolyglotSidequest_MEF2D
 			c = calculateMagnitude(n3.getX() - n1.getX(), n3.getY() - n1.getY());
 			s = (a + b + c) / 2;
 
-			A = Math.Sqrt(s * (s - a) * (s - b) * (s - c));
+			A = (float)Math.Sqrt(s * (s - a) * (s - b) * (s - c));
 			return A;
 		}
 

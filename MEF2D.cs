@@ -8,6 +8,10 @@ using static PolyglotSidequest_MEF2D.Sel;
 using static PolyglotSidequest_MEF2D.Tools;
 using System.Numerics;
 
+//deje los comentarios originales del codigo como referencia para no perdernos.
+//este es la clase main 
+//se nos dificulta para encontrar equivalentes a las librerias utilizadas, librerias como "Ifstream" 
+
 namespace PolyglotSidequest_MEF2D
 {
     class MEF2D
@@ -30,7 +34,8 @@ namespace PolyglotSidequest_MEF2D
 			Console.Write("\t- PESOS DE GALERKIN\n");
 			Console.Write("\t- MALLA TRIANGULAR IRREGULAR\n");
 			Console.Write("*********************************************************************************\n\n");
-
+			
+			//FALTA-----------------------------------------------------------------
 			mesh m = new mesh();
 			leerMallayCondiciones(m, filename);
 			Console.Write("Datos obtenidos correctamente\n********************\n");

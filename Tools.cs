@@ -5,6 +5,7 @@ using static PolyglotSidequest_MEF2D.Classes;
 using static PolyglotSidequest_MEF2D.Math_tools;
 using static PolyglotSidequest_MEF2D.Sel;
 
+//deje los comentarios originales del codigo como referencia para no perdernos.
 
 namespace PolyglotSidequest_MEF2D
 {
@@ -260,6 +261,7 @@ namespace PolyglotSidequest_MEF2D
 		{
 			string outputfilename = new string(new char[150]);
 			//A PARTIR DE AQUÍ FALTA PASARLO A C#
+			//------------------------help I don't have a clear idea from here :(------------------------------------------
 			int dirich_indices = m.getDirichletIndices();
 			condition[] dirich = m.getDirichlet();
 			ofstream file = new ofstream();
